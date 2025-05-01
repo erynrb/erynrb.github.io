@@ -1,0 +1,8 @@
+body {
+    font-family: sans-serif;
+    background-color: darkslateblue;
+    color: aliceblue;
+    padding: 2rem; /* this controls spacing, and 2rem means 2x the text size*/
+    max-width: 700px;
+    margin: auto;
+}
