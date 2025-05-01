@@ -1,8 +1,89 @@
 body {
+    display:flex;
     font-family: sans-serif;
     background-color: darkslateblue;
     color: aliceblue;
-    padding: 2rem; /* this controls spacing, and 2rem means 2x the text size*/
-    max-width: 700px;
-    margin: auto;
+    padding: 0; /* this controls spacing, and 2rem means 2x the text size*/
+    margin: 0;
+    height: 100%
+}
+/* create a sidebar style for nav*/
+/*Sidebar*/
+.sidebar {
+width: 180px;
+background-color: cornflowerblue;
+color: aliceblue;
+padding: 20px;
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+transition: transform 0.3s ease;
+}
+.sidebar a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 20px 0;
+}
+.sidebar .logo{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    width: auto;
+}
+.sidebar .close-btn {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+
+main {
+    margin-left:260px;
+    padding: 20px;
+    width: 100%;
+}
+main p{
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+/*Hamburger*/
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: aliceblue;
+    z-index: 1000;
+}
+
+/*Responsive Design -- only shows the hamburger on small screens*/
+@media (max-width:768px){
+    .sidebar{
+        transform:translateX(-100%);
+        position: fixed;
+        z-index: 999;
+    }
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    .sidebar.close-btn {
+        display: block;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
