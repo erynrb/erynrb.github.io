@@ -70,24 +70,51 @@ main header {
     margin: auto;
 }
 
-.projectOdd {
+.project {
     display: flex;
-    align-items: center;
-    padding-left: 5%;
-    width: 100%;
-    height: 75vh;
-    color: black;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.project:nth-child(odd){
     background-color: grey;
-}
-.projectEven {
-    display: flex;
-    align-items: center;
-    padding-left: 5%;
-    height: 75vh;
-    width: 100%;
     color: black;
-    background-color: white;
 }
+
+.project:nth-child(even){
+    background-color: white;
+    color: black;
+}
+
+.project::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 5px solid orchid;
+    left: 38px;
+}
+
+.projectTitle {
+    color: orchid;
+    position: relative;
+    height: 10px;
+}
+
+.projectTitle::before{
+    content:"";
+    position: absolute;
+    background: orchid;
+    width: 15px;
+    height: 15px;
+    border-radius: 999px;
+    border: 3px solid orchid;
+    left: -40px;
+    top: 0px;
+}
+
+
 
 
 .column {
