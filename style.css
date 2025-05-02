@@ -1,28 +1,31 @@
 body {
     display:flex;
     font-family: sans-serif;
-    background-color: darkslateblue;
-    color: aliceblue;
+    background-color: #2e3237;
+    color: #cee4ae;
     padding: 0; /* this controls spacing, and 2rem means 2x the text size*/
     margin: 0;
     height: 100%
 }
+
 /* create a sidebar style for nav*/
 /*Sidebar*/
 .sidebar {
-width: 180px;
-background-color: cornflowerblue;
-color: aliceblue;
+width: 150px;
+background-color: #cee4ae;
+color: #2e3237;
 padding: 20px;
 position: fixed;
 top: 0;
 left: 0;
 height: 100%;
 transition: transform 0.3s ease;
+transform:translateX(-100%);
+z-index: 999;
 }
 .sidebar a {
     display: block;
-    color: aliceblue;
+    color: #2e3237;
     text-decoration: none;
     margin: 20px 0;
 }
@@ -33,27 +36,20 @@ transition: transform 0.3s ease;
     width: auto;
 }
 .sidebar .close-btn {
-    display: none;
+    display: block;
     background: none;
     color: white;
     border: none;
     font-size: 1.5em;
     margin-top: 20px;
 }
-
-
-main {
-    margin-left:260px;
-    padding: 20px;
-    width: 100%;
-}
-main p{
-    font-family: 'Courier New', Courier, monospace ;
+.sidebar.show {
+    transform: translateX(0);
 }
 
 /*Hamburger*/
 .hamburger {
-    display: none;
+    display: block;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -64,26 +60,16 @@ main p{
     z-index: 1000;
 }
 
-/*Responsive Design -- only shows the hamburger on small screens*/
-@media (max-width:768px){
-    .sidebar{
-        transform:translateX(-100%);
-        position: fixed;
-        z-index: 999;
-    }
-    .sidebar.show {
-        transform: translateX(0);
-    }
-    .sidebar.close-btn {
-        display: block;
-    }
-
-    main {
-        margin-left: 0;
-        padding: 20px;
-    }
-
-    .hamburger {
-        display: block;
-    }
+main {
+    margin-left:190px;
+    padding: 20px;
+    width: 100%;
 }
+main p{
+    font-family: 'Courier New', Courier, monospace ;
+}
+main t {
+    font-size: 30px;
+
+}
+
