@@ -65,7 +65,7 @@ main {
 
 main header {
     display: flex;
-    height: calc(100vh - 5vw);
+    height: 100vh;
     width: 75%;
     margin: auto;
 }
@@ -135,6 +135,10 @@ main p {
     height: auto;
 }
 
+.projectImage p {
+    font-size: 0.75em;
+    font-style: italic;
+}
 
 .column {
     flex:1;
@@ -142,4 +146,12 @@ main p {
 .row{
     display: flex;
     gap: 30px;
+    padding-bottom: 10px;
+}
+
+.offset {
+    width: 50%;
+    float: right;
+    padding-right: 30px;
+    margin-left: 30px;
 }
