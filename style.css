@@ -93,7 +93,7 @@ main a{
 }
 
 .project:nth-child(odd){
-    background-color: #efe5da;
+    background-color: white;
 }
 
 .project:nth-child(even){
