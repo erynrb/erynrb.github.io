@@ -1,8 +1,16 @@
+:root {
+    --primary-color: #2f4156;
+    --background-color: #c8d9e6;
+    --accent-color: #567C8D;
+    --font: sans-serif;
+  }
+
+
 body {
     display:flex;
     font-family: sans-serif;
-    background-color: #c8d9e6;
-    color: #2f4156;
+    background-color: var(--background-color);
+    color: var(--primary-color);
     height: 100%
 }
 
@@ -10,8 +18,8 @@ body {
 /*Sidebar*/
 .sidebar {
 width: 150px;
-background-color: #2f4156;
-color: #c8d9e6;
+background-color: var(--primary-color);
+color: var(--background-color);
 padding: 20px;
 position: fixed;
 top: 0;
@@ -23,7 +31,7 @@ z-index: 999;
 }
 .sidebar a {
     display: block;
-    color: #c8d9e6;
+    color: var(--background-color);
     text-decoration: none;
     margin: 20px 0;
 }
@@ -36,7 +44,7 @@ z-index: 999;
 .sidebar .close-btn {
     display: block;
     background: none;
-    color: #567C8D;
+    color: var(--accent-color);
     border: none;
     font-size: 1.5em;
     margin-top: 20px;
@@ -54,7 +62,7 @@ z-index: 999;
     font-size: 1.5em;
     background: none;
     border: none;
-    color: #567C8D;
+    color: var(--accent-color);
     z-index: 1000;
 }
 
@@ -75,56 +83,11 @@ main p {
 }
 
 main a{
-    color: #567C8D;
+    color: var(--accent-color);
 }
 
-.project {
-    gap: 20px;
-    padding-left: 70px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    color: #2f4156;
-}
 
-.project p {
-    text-align: justify;
-}
 
-.project:nth-child(odd){
-    background-color: white;
-}
-
-.project:nth-child(even){
-    background-color: #F5efe8;
-}
-
-.project::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    border-left: 5px solid #567C8D;
-    left: 38px;
-}
-
-.projectTitle {
-    color: #567C8D;
-    position: relative;
-    height: 10px;
-}
-
-.projectTitle::before{
-    content:"";
-    position: absolute;
-    background: #567C8D;
-    width: 15px;
-    height: 15px;
-    border-radius: 999px;
-    border: 3px solid #567C8D;
-    left: -40px;
-    top: 0px;
-}
 
 .projectImage {
     width: 33%;
@@ -169,4 +132,57 @@ main a{
 
 .spacer{
     padding-top: 20px;
+}
+
+
+
+
+
+.timeline {
+    background-color: var(--background-color);
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 58px; /* aligns with center of .marker */
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #567C8D;
+    z-index: 0;
+}
+
+.marker {
+    flex: 0 0 auto;
+    font-size: 24px;
+    line-height: 1;
+    z-index: 1; /* above the line */
+    width: 40px;
+    text-align: center;
+    padding-top: 8px;
+  }
+    
+.timelineBlock {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+.timelineCard {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.projectTitle {
+    margin-top: 0;
+    color: var(--accent-color);
 }
