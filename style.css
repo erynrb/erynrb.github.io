@@ -2,7 +2,6 @@
     --primary-color: #2f4156;
     --background-color: #c8d9e6;
     --accent-color: #567C8D;
-    --font: sans-serif;
   }
 
 
@@ -80,12 +79,22 @@ main header {
 
 main p {
     width: 95%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main a{
     color: var(--accent-color);
 }
 
+main h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+main h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
 
 
 
@@ -141,14 +150,13 @@ main a{
 .timeline {
     background-color: var(--background-color);
     position: relative;
-    margin: 20px auto;
     width: 100%;
 }
 
 .timeline::before {
     content: "";
     position: absolute;
-    left: 58px; /* aligns with center of .marker */
+    left: 18px; /* aligns with center of .marker */
     top: 0;
     bottom: 0;
     width: 4px;
@@ -163,22 +171,22 @@ main a{
     z-index: 1; /* above the line */
     width: 40px;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 18px;
   }
     
 .timelineBlock {
-    padding: 10px;
+    padding-left: 0px;
+    padding-top: 10px;
     display: flex;
     align-items: flex-start;
     position: relative;
     margin: 20px 0;
-    padding-left: 40px;
 }
 
 .timelineCard {
     background-color: white;
     border-radius: 12px;
-    padding: 10px 15px;
+    padding: 20px;
     width: 100%;
 }
 
