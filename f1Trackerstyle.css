@@ -1,0 +1,69 @@
+.carBox{
+    display: block;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+div{
+    display: inline-block;
+}
+.car{
+    display: inline-block;
+    border-left: 3px black solid;
+    height:30px;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+.carBox{
+    display: block;
+}
+.code{
+    width:200px;
+    text-align: right;
+    font-size: small;
+}
+button{
+    margin: auto;
+    background-color: lightgrey;
+    border: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+button:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+body{
+    background-color: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 0px;
+}
+.position{
+    width: 30px;
+    text-align: left;
+}
+p{
+    color: black;
+    font-size: small;
+    font-variant: small-caps;
+}
+header{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin:10px;
+    padding: 10px;
+}
+
+h2{
+    padding: 0px;
+    margin:0px;
+    margin-top: 10px;
+}
