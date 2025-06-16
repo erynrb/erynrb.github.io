@@ -209,3 +209,11 @@ img{
     margin-top: 0;
     color: var(--accent-color);
 }
+
+a:hover {
+    cursor: pointer;
+}
+
+embed:hover{
+    cursor: pointer;
+}
