@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device=width, initial-scale=1.0"/>
-    <title>Eryn Richardson-Bartha</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="timelinestyle.css"/>
     <link rel="icon" href="" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+
     <!---Navigation-->
     <nav class="sidebar" id="sidebar">
         <div class="logo"><img loading="lazy" src="images/little me.jpeg" width="140" height="93"></div>
@@ -20,20 +22,132 @@
     <button id="sidebarButton" class="hamburger" onclick="toggleSidebar()">☰</button>
 
 <main>
+<body>
+    <h1>Engineering Portfolio</h1>
+        <div class="row" style="height: 400px;">
+            <div class="column smallColumn">
+                <div class="card blue3" id="project7">
+                    <div class= "content">
+                    <p class="projTitle">Spotify Data Processing</p>
+                    <p>It's now up and working! Mostly. Note that due to server constraints files are often too large to be processed. The team is (I am) working on this and will likely connect to the spotify API or allow code to be downloaded. In the meantime, feel free to download the processing code <a href="https://github.com/erynrb/spotifyProcessing">here</a>.</p>
+                    </div>
+                    <div class="projectImg" style="height: 220px;"><a target="_blank" style="display:inline-block; width:100%; height: 100%;" href="dataifyWebsite.html"><embed loading="lazy"  src="dataifyWebsite.html" style="width:100%; height: 100%; zoom:50%; pointer-events: none;"></a></div>
+                </div>
+            </div>
+            <div class="column mediumColumn">
+                <div class="card blue2" id="project5">
+                    <div style="display: flex; flex-direction: row;">
+                    <div class="content" style="max-height: 100%;">
+                    <p class="projTitle">L1 High Power Rocket</p>
+                    <p><b>Context:</b> Pursued my L1 High Power Rocketry certification through the Upstate Research Rocketry Group, as part of my involvement with UTAT. Built and launched the rocket Minerva in under 3 weeks while managing a full EngSci course load. <br><br><b>Contributions:</b> Chose and assembled a kit, prepped and installed motor, designed paint job, and tested recovery system. Built the kit with mentorship from experienced UTAT teammates.<br><br><b>Skills and Tools:</b> Rocket design, epoxy/adhesive bonding, motor integration, time management under pressure.<br><br><b>Outcomes:</b> Launched successfully on Nov 2, 2024. Nominal flight and clean recovery. I am now officially L1 certified!
+                    </p>
+                    </div>
+                    <div class="projectImg"><img loading="lazy" src="images/L1.3.jpeg" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="height: 400px;">
+            <div class="column mediumColumn">
+                <div class="card blue1"  id="project6">
+                    <div style="display: flex; flex-direction: row;">
+                    <div class= "content" style="max-height: 100%;">
+                    <p class="projTitle">Praxis 3: SaskWatch</p>
+                    <p><b>Context:</b> Worked in a team on a 3-month design project aiming to tackle wildfire impact by collecting and sharing wildfire-relevant data in remote areas of the Boreal Plains of Saskatchewan.<br><br><b>Contributions:</b> I took initiative in building the mechanical components of the anemometer, and learned CAM through this process. I designed and manufactured the anemometor and part of the electronics casing using 3D modeling and printing. I also managed timelines, navigated course expectations, and kept the team on track.<br><br><b>Skills and Tools:</b> CAD (Fusion360), CAM, project management, communication, organization.<br><br><b>Outcomes:</b> We built and presented a functional prototype at the Praxis III Showcase.</p>
+                    </div>
+                    <div class="projectImg" ><img loading="lazy" src="images/204Drawings.png"><img loading="lazy" src="images/PraxisIIIShowcase.jpg"><img loading="lazy" src="images/204Module.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="column smallColumn">
+                <div class="card blue3" id="project10">
+                    <div class= "content">
+                    <p class="projTitle">F1 Driver's Championship Standings</p>
+                    <p>I built this as a way to learn about APIs (while keeping an eye on my favourite sport). </p>
+                    </div>
+                    <div class="projectImg" ><a target="_blank" style="display:inline-block; width:100%; height: 100%;" href="f1Tracker.html"><embed loading="lazy"  src="f1Tracker.html" style="width:100%; height: 100%; zoom:75%; pointer-events: none;"></a></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="column smallColumn">
+                <div class="card blue2" id="project9">
+                    <div class= "content">
+                    <p class="projTitle">UTAT Rocketry: Composites Manufacturing and Airframe Design</p>
+                    <p>As a member of the UTAT Rocketry Team, I work on the rocket's airframe: from CAD in SolidWorks and OnShape to composites manufacturing using carbon fibre and fibreglass.</p>
+                    </div>
+                    <div class="projectImg" style="flex-wrap: nowrap;"><img loading="lazy" src="images/Composites.jpeg"></div>
+                </div>
+            </div>
+            <div class="column smallColumn">
+                <div class="card blue3" id="project4">
+                    <div class="content">
+                    <p class="projTitle">UBC ESROP: Investigating the Impact of Shift Work on Sleep Using Wearable Sensors</p>
+                    <p><b>Context:</b> I worked in UBC's Department of Mechanical Engineering as a summer research assistant in Dr. Wu's lab (SimPL) funded in part by the Engineering Science Research Opportunity Program.<br><br> <b>Contributions:</b> I conducted literature reviews and applied this learning to write MATLAB code that processes actigraphy data according to a variety of algorithms (Cole-Kripke, Sadeh, Sazonov, etc.) and visualizes the result.<br><br> <b>Skills and Tools:</b> MATLAB, participant communication, lab work, data visualization, presentations.<br><br></p>
+                    </div>
+                    <div class="projectImg"><img loading="lazy" src="images/ESROP Slide2.png"></div>
+                </div>
+            </div>
+            <div class="column smallColumn">
+                <div class="card blue1" id="project8">
+                    <div class="content">
+                    <p class="projTitle">A-Frame Build</p>
+                    <p>Currently a work in progress!</p>
+                    </div>
+                    <div class="projectImg"><img loading="lazy" src="images/AFrameMain.jpeg"></div>
+                </div>
+            </div>
+        </div>
 
-<!--- Project Timeline -->
-<section id="projectTimeline">
-    <h2>Project Timeline</h2>
+        <div class="row">
+            <div class="column smallColumn">
+                <div class="card blue3" id="project3">
+                    <div class= "content">
+                    <p class="projTitle">Praxis 2: Netted Fridge</p>
+                    <p><b>Context:</b> This project was undertaken within the context of Praxis 2 - ESC102. The aim was to design an improved 
+                    system for transporting mushrooms between Guelph and Toronto for Noki Farms. The key requirements were grouped under four main categories: optimal mushroom health, spatial optimization, durability, and efficiency. These requirements allowed us to frame our design space, leading to a design that protects the health of the mushrooms, wastes little space, can withstand foreseeable forces, and does not sacrifice ease of use and speed. <br><br>
+                    <b>Contributions:</b> I wrote sections of our design reports, managed timelines and tasks, and built a prototype to test and demonstrate our design concept.<br><br>
+                    <b>Skills and Tools:</b> Power tools (drills, bandsaw), written communication, verbal communication, FDCR framework, prototyping.<br><br>
+                    <b>Outcomes:</b> We created a design of a portable fridge with modular shelves made out of netting. The fridge has the option to be charged by solar power or a regular AC power supply. Additionally, the shelf frames are made of polyactic acid (PLA), a plastic made from renewable sources, and the nets are made from bamboo fibre yarn. Our team was shortlisted for the Ian and Shirley Rowe Award.</p>
+                    </div>
+                    <div class="projectImg" style="flex-wrap: nowrap;"><img loading="lazy" src="images/Netted Fridge Graphics.png"></div>
+                </div>
+            </div>
+            <div class="column smallColumn">
+                <div class="card blue1" id="project2">
+                    <div class="content">
+                    <p class="projTitle">CIV102: The Sleepless Scaffold</p>
+                    <p><b>Context:</b> This project was undertaken as part of the course work for CIV102 - Structures and Materials. The purpose was to design a bridge made exclusively of matboard and contact cement to withstand a dynamic load applied during bridge testing.This project was completed with Zarah Mathew and Ahana Jhamb.<br><br> <b>Contributions:</b> I contributed to the MATLAB simulation code, hand calculations, and manufacturing. I also completed the engineering drawings.<br><br><b>Skills and Tools:</b> MATLAB, time management, simulations, manufacturing.<br><br><b>Outcomes:</b> The bridge was completed on time and tested under a dynamic load case. The bridge did not withstand the expected load, which was a valuable lesson about simulations vs reality.</p>
+                    </div>
+                    <div class="projectImg"><img loading="lazy" src="images/CIV102 Bridge.png" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="column smallColumn">
+                <div class="card blue2" id="project1">
+                    <div class="content">
+                    <p class="projTitle">Praxis 1: The Waxed Canopy</p>
+                    <p>
+                        <b>Context:</b> My Praxis 1 team worked with a student generated RFP that aimed to solve the problem of carrying/storing wet umbrellas for engineering students. <br><br>
+                        <b>Contributions:</b> I led key design decisions, contributed to prototyping, and helped guide team collaboration by identifying strengthsm, delegating tasks, and keeping track of timelines.<br><br>
+                        <b>Skills and Tools:</b> Collaboration, leadership, communication, FDCR framework of engineering.<br><br>
+                        <b>Outcomes:</b> My team designed an umbrella made with waxed canvas, which absorbs less water than traditional nylon. This material choice reduces indoor dripping and drying time, making it more convenient for students.</p>
+                    </div>
+                    <div class="projectImg"><img src="images/waxed canopy.png"></div>
+                </div>
+            </div>
+        </div>
+    <div class="footer" ></div>
+<!-- 
 
-    <div class = "timeline">
         <div class = "timelineBlock" id="project10">
             <div class="marker">⭐</div>
             <div class = "timelineCard">
                 <div class="row">
-                    <div class="column">  
+                    <div class="column2">  
                         <h3 class="projectTitle">F1 Driver's Championship Standings</h3>
                         <p>I built this as a way to learn about APIs (while keeping an eye on my favourite sport).</p></div>
-                    <div class = "column2"><a target="_blank" style="display:inline-block; width:100%;" href="f1Tracker.html"><embed loading="lazy"  src="f1Tracker.html" style="width:100%; height: 250px; pointer-events: none;"></a>
+                    <div class = "column"><a target="_blank" style="display:inline-block; width:100%;" href="f1Tracker.html"><embed loading="lazy"  src="f1Tracker.html" style="width:100%; height: 250px; zoom:50%; pointer-events: none;"></a>
                 </div>
             </div>
             </div>
@@ -64,8 +178,11 @@
             <div class="marker">⭐</div>
             <div class = "timelineCard">
                 <h3 class="projectTitle">Spotify Data Processing</h3>
-                <p>It's now up and working! Note that due to server constraints files are often too large to be processed. The team (me) is working on this and will likely connect to the spotify API or allow code to be downloaded. In the meantime, feel free to download the processing code <a href="https://github.com/erynrb/spotifyProcessing">here</a>.</p>
-                <div class = "projectImage"><embed loading="lazy" src="dataify/templates/index.html" style="width: 100%;"></div>
+                <div class="row">
+                    <div class="column2"><p>It's now up and working! Mostly. Note that due to server constraints files are often too large to be processed. The team (me) is working on this and will likely connect to the spotify API or allow code to be downloaded. In the meantime, feel free to download the processing code <a href="https://github.com/erynrb/spotifyProcessing">here</a>.</p></div>
+                    <div class = "column"><a target="_blank" style="display:inline-block; width:100%;" href="https://dataify-euaaasdsfuamcfej.canadacentral-01.azurewebsites.net/"><embed loading="lazy" src="https://dataify-euaaasdsfuamcfej.canadacentral-01.azurewebsites.net/" style="width: 100%; height: 420px; zoom:50%;"></a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -162,13 +279,12 @@
                 
             
         </div>
-    </div>
+    </div> -->
 
 
 
 
-</section>
+</body>
 </main>
 <script src="script.js"></script>
-</body>
 </html>

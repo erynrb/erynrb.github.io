@@ -157,12 +157,12 @@ figure {
 
 
 .timeline {
-    background-color: lightgrey;
+    background-color: white;
     position: relative;
-    width: 100%;
+    width: 80%;
     padding-bottom: 20px;
     padding-top: 5px;
-    padding-right: 30px;
+    margin: auto;
 }
 
 .timeline::before {
@@ -203,12 +203,13 @@ img{
     background-color: white;
     border-radius: 12px;
     padding: 20px;
-    width:100%;
+    width:90%;
+    box-shadow: 3px 3px 3px darkgray;
 }
 
 .projectTitle {
     margin-top: 0;
-    color: var(--accent-color);
+    color: black;
 }
 
 a:hover {
