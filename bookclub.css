@@ -1,0 +1,49 @@
+.currentRead{
+    margin: 40px;
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    justify-self: center;
+}
+
+.pastReads{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1{
+    justify-self: center;
+}
+
+.pastBook img{
+    width: 100%;
+    box-shadow: #D2B164 5px 5px 5px; 
+    border-radius: 0 10px 10px 0;
+}
+
+.pastBook{
+    display: flex;
+    flex-direction: column;
+    width:100px;
+}
+
+.caption{
+    font-size: smaller;
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    justify-self: center;
+    padding: 40px;
+    background-color: #E4C67E;
+}
+
+body{
+    background-color:#D2B164;
+    font-family:"Bodoni Moda", serif;;
+}
